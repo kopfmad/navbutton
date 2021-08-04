@@ -50,7 +50,7 @@ h1 {
   top: 0;
   left: 0;
   place-items: center;
-  animation: appear 1s ease;
+  animation: appear 0.3s ease-in-out;
 }
 
 .navcontaineractive ul li {
@@ -62,11 +62,9 @@ h1 {
 
 @keyframes appear {
   from {
-    opacity: 0;
-    transform: scale(0);
+    transform: translate(100%);
   }
   to {
-    opacity: 1;
-    transform: scale(1);
+    transform: translate(0%);
   }
 }
